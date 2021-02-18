@@ -1,7 +1,7 @@
-# Kanban Board
+# KanBan-Board
 
-* Japanese-style Kanban board for productivity and efficient task management.
-* Card data stored locally.
+* Japanese-style KanBan-board for productivity & efficient task-management
+* task-data stored locally (local-storage)
 
 ## Stack
 

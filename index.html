@@ -1,29 +1,29 @@
 <!DOCTYPE html>
-<html lang='en'>
+<html>
 	<head>
-		<meta charset='UTF-8'>
-		<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-		<title>Kanban Board</title>
-		<link rel='icon' type='image/png' href='favicon.png'>
-		<link rel='stylesheet' href='style.css'>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0' />
+		<title>KanBan-Board</title>
+		<link rel='icon' type='image/x-icon' href='favicon.ico' />
+		<link rel='stylesheet' type='text/css' href='style.css' />
 	</head>
 	<body>
-		<h1 class='main-title'>Kanban Board</h1>
+		<h1 class='main-title'>KanBan-Board</h1>
 		<div class='drag-container'>
 			<ul class='drag-list'>
 				<li class='drag-column backlog-column'>
 					<span class='header'>
-						<h1>Backlog</h1>
+						<h1>BackLog</h1>
 					</span>
-					<div id='backlog-content' class='custom-scroll' ondragover='allowDrop(event)' ondragenter='dragEnter(0)' ondrop='drop(event)'>
+					<div id='backlog-content' class='custom-scroll' ondragenter='dragEnter(0)' ondragover='allowDrop(event)' ondrop='drop(event)'>
 						<ul id='backlog-list' class='drag-item-list'></ul>
 					</div>
-					<div class='add-btn-group'>
-						<div class='add-btn' onclick='showInputBox(0)'>
+					<div class='add-button-group'>
+						<div class='add-button' onclick='showInPutBox(0)'>
 							<span class='plus-sign'>+</span>
 							<span>Add Item</span>
 						</div>
-						<div class='add-btn solid' onclick='hideInputBox(0)'>
+						<div class='add-button solid' onclick='hideInPutBox(0)'>
 							<span>Save</span>
 						</div>
 					</div>
@@ -35,15 +35,15 @@
 					<span class='header'>
 						<h1>Progress</h1>
 					</span>
-					<div id='progress-content' class='custom-scroll' ondragover='allowDrop(event)' ondragenter='dragEnter(1)' ondrop='drop(event)'>
+					<div id='progress-content' class='custom-scroll' ondragenter='dragEnter(1)' ondragover='allowDrop(event)' ondrop='drop(event)'>
 						<ul id='progress-list' class='drag-item-list'></ul>
 					</div>
-					<div class='add-btn-group'>
-						<div class='add-btn' onclick='showInputBox(1)'>
+					<div class='add-button-group'>
+						<div class='add-button' onclick='showInPutBox(1)'>
 							<span class='plus-sign'>+</span>
 							<span>Add Item</span>
 						</div>
-						<div class='add-btn solid' onclick='hideInputBox(1)'>
+						<div class='add-button solid' onclick='hideInPutBox(1)'>
 							<span>Save</span>
 						</div>
 					</div>
@@ -55,15 +55,15 @@
 					<span class='header'>
 						<h1>Complete</h1>
 					</span>
-					<div id='complete-content' class='custom-scroll' ondragover='allowDrop(event)' ondragenter='dragEnter(2)' ondrop='drop(event)'>
+					<div id='complete-content' class='custom-scroll' ondragenter='dragEnter(2)' ondragover='allowDrop(event)' ondrop='drop(event)'>
 						<ul id='complete-list' class='drag-item-list'></ul>
 					</div>
-					<div class='add-btn-group'>
-						<div class='add-btn' onclick='showInputBox(2)'>
+					<div class='add-button-group'>
+						<div class='add-button' onclick='showInPutBox(2)'>
 							<span class='plus-sign'>+</span>
 							<span>Add Item</span>
 						</div>
-						<div class='add-btn solid' onclick='hideInputBox(2)'>
+						<div class='add-button solid' onclick='hideInPutBox(2)'>
 							<span>Save</span>
 						</div>
 					</div>
@@ -71,19 +71,19 @@
 						<div class='add-item' contenteditable='true'></div>
 					</div>
 				</li>
-				<li class='drag-column on-hold-column'>
+				<li class='drag-column hold-column'>
 					<span class='header'>
-						<h1>On Hold</h1>
+						<h1>Hold</h1>
 					</span>
-					<div id='on-hold-content' class='custom-scroll' ondragover='allowDrop(event)' ondragenter='dragEnter(3)' ondrop='drop(event)'>
-						<ul id='on-hold-list' class='drag-item-list'></ul>
+					<div id='hold-content' class='custom-scroll' ondragenter='dragEnter(3)' ondragover='allowDrop(event)' ondrop='drop(event)'>
+						<ul id='hold-list' class='drag-item-list'></ul>
 					</div>
-					<div class='add-btn-group'>
-						<div class='add-btn' onclick='showInputBox(3)'>
+					<div class='add-button-group'>
+						<div class='add-button' onclick='showInPutBox(3)'>
 							<span class='plus-sign'>+</span>
 							<span>Add Item</span>
 						</div>
-						<div class='add-btn solid' onclick='hideInputBox(3)'>
+						<div class='add-button solid' onclick='hideInPutBox(3)'>
 							<span>Save</span>
 						</div>
 					</div>

@@ -1,20 +1,21 @@
-/* Trees Image - Pexels: https://www.pexels.com/photo/photo-of-trees-in-forest-3801030/ */
-@import url("https://fonts.googleapis.com/css?family=Quicksand&display=swap");
+/* trees-image from Pexels: https://www.pexels.com/photo/photo-of-trees-in-forest-3801030 */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 html {
 	box-sizing: border-box;
 }
 
 :root {
-	--column-1: #a2622d;
-	--column-2: #1b6161;
+	--column-1: #A2622D;
+	--column-2: #1B6161;
 	--column-3: #248224;
-	--column-4: #a22d22;
+	--column-4: #A22D22;
 }
 
 body {
 	margin: 0;
-	background: url("./trees.jpg");
+	background: url('trees.jpg');
 	background-size: cover;
 	background-position: 50% 60%;
 	background-attachment: fixed;
@@ -57,35 +58,24 @@ ul {
 	overflow-x: hidden;
 }
 
-.backlog-column .header,
-.backlog-column .solid,
-.backlog-column .solid:hover,
-.backlog-column .over {
+.backlog-column .header, .backlog-column .solid, .backlog-column .solid:hover, .backlog-column .over {
 	background-color: var(--column-1);
 }
 
-.progress-column .header,
-.progress-column .solid,
-.progress-column .solid:hover,
-.progress-column .over {
+.progress-column .header, .progress-column .solid, .progress-column .solid:hover, .progress-column .over {
 	background-color: var(--column-2);
 }
 
-.complete-column .header,
-.complete-column .solid,
-.complete-column .solid:hover,
-.complete-column .over {
+.complete-column .header, .complete-column .solid, .complete-column .solid:hover, .complete-column .over {
 	background-color: var(--column-3);
 }
 
-.on-hold-column .header,
-.on-hold-column .solid,
-.on-hold-column .solid:hover,
-.on-hold-column .over {
+.hold-column .header, .hold-column .solid, .hold-column .solid:hover, .hold-column .over {
 	background-color: var(--column-4);
 }
 
-/* Custom Scrollbar */
+/* custom scrollBar */
+
 .custom-scroll {
 	overflow-y: auto;
 	max-height: 75vh;
@@ -119,7 +109,8 @@ ul {
 	font-size: 1.25rem;
 }
 
-/* Drag and Drop */
+/* drag/drop */
+
 .over {
 	padding: 50px 10px;
 }
@@ -145,13 +136,14 @@ ul {
 	color: black;
 }
 
-/* Add Button Group */
-.add-btn-group {
+/* add-button--group */
+
+.add-button-group {
 	display: flex;
 	justify-content: space-between;
 }
 
-.add-btn {
+.add-button {
 	margin: 10px;
 	padding: 5px 10px;
 	display: flex;
@@ -163,12 +155,12 @@ ul {
 	user-select: none;
 }
 
-.add-btn:hover {
+.add-button:hover {
 	background-color: rgba(255, 255, 255, 0.9);
 	color: black;
 }
 
-.add-btn:active {
+.add-button:active {
 	transform: scale(0.97);
 }
 
@@ -214,14 +206,14 @@ ul {
 	outline: none;
 }
 
-/* Media Query: Laptop */
+/* media-query: lapTop */
 @media screen and (max-width: 1800px) {
 	.main-title {
 		font-size: 2rem;
 	}
 }
 
-/* Media Query: Large Smartphone (Vertical) */
+/* media-query: large smartPhone (vertical) */
 @media screen and (max-width: 600px) {
 	body {
 		overflow-y: auto;
